@@ -31,12 +31,6 @@
 </p>
 
 <p align="center">
-  <a href="">
-    <img src="" alt="Logo" width="100%">
-  </a>
-</p>
-
-<p align="center">
 <strong>Provided a input video, our model can generate a novel video that follows a desired camera trajectory.</strong>
 </p>
 
