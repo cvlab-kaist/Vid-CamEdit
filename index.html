@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content=".">
+    <meta name="keywords"
+          content="Vid-CamEdit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vid-CamEdit</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/twentytwenty.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="./static/js/jquery-3.2.1.min.js"></script>
+    <script src="./static/js/jquery.event.move.js"></script>
+    <script src="./static/js/jquery.twentytwenty.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/fontawesome.all.min.js"></script>
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<!-- <script async src=""></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-LKCDBW8851');
+</script> -->
+
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://cvlab-kaist.github.io/Vid-CamEdit">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Related Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://genwarp-nvs.github.io/">
+            GenWarp
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero teaser ">
+    <div class="hero-body">
+        <div class="container is-max-desktop has-text-centered">
+            <div class="columns is-centered">
+                <div class="column has-text-centered ">
+                    <br>
+                    <h1 class="title is-1 publication-title has-text-centered" style="font-size: 2.5rem; line-height: 1.3;">
+                        Video Camera Trajectory Editing with <br> Generative Rendering from Estimated Geometry
+                    </h1>
+                    <div class="is-size-5 publication-authors">
+                        <a style="text-decoration:none" href="https://j0seo.github.io/">
+                            Junyoung&nbsp;Seo*<sup>1</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://onground-korea.github.io/">
+                            Jisang&nbsp;Han*<sup>1</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://crepejung00.github.io/">
+                            Jaewoo&nbsp;Jung*<sup>1</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://jinsy515.github.io/my-page/">
+                        Siyoon Jin<sup>1</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://scholar.google.com/citations?user=0H3dcPoAAAAJ&hl=en">
+                        Joungbin&nbsp;Lee<sup>1</sup>
+                        </a>
+                        <br>
+                        <a style="text-decoration:none" href="https://scholar.google.com/citations?user=D3h3NxwAAAAJ&hl=en">
+                            Takuya Narihira<sup>2</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://ai.sony/people/Kazumi-Fukuda/">
+                            Kazumi Fukuda<sup>2</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://scholar.google.com/citations?user=XCRO260AAAAJ">
+                            Takashi Shibuya<sup>2</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://sunovivid.github.io/">
+                        Donghoon Ahn<sup>1</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://skhu101.github.io">
+                            Shoukang Hu<sup>2</sup>
+                        </a>
+                        <br>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://cvlab.kaist.ac.kr/members/faculty">
+                            Seungryong&nbsp;Kim<sup>†,1</sup>
+                        </a>
+                        <span style="padding-left: 20px;"></span>
+                        <a style="text-decoration:none" href="https://www.yukimitsufuji.com">
+                            Yuki Mitsufuji<sup>†,2,3</sup>
+                        </a>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>KAIST AI &nbsp; &nbsp; &nbsp; <sup>2</sup>Sony AI &nbsp; &nbsp; <sup>3</sup>Sony Group Corporation</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                          <span class="link-block">
+                            <a href="https://arxiv.org/abs/xxx"
+                               class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  <i class="ai ai-arxiv"></i>
+                              </span>
+                              <span>arXiv</span>
+                            </a>
+                          </span>
+                          <span class="link-block">
+                            <a href="https://github.com/cvlab-kaist/Vid-CamEdit"
+                               class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  <i class="fab fa-github"></i>
+                              </span>
+                              <span>Code and Model</span>
+                              </a>
+                          </span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero teaser is-light is-small">
+    <div class="hero-body">
+        <div style="display: inline-block; width: 70%;">
+
+      <video muted autoplay loop width="100%" preload controls>
+        <source src="./video/ProjectPage_Teaser_new.mp4" type="video/mp4">
+      </video>
+
+      <!-- <div class="col-md-8 offset-md-2 rounded" style="text-align: center; padding-bottom: 0px; padding-top: 5px; background-color: #d0d5ec;> -->
+        <h6 style="text-align: center; color: rgb(0, 0, 0); margin: 0;">
+          <strong>TL;DR</strong>: Create novel videos from any desired trajectory of real or animation videos.
+        </h6>
+      <!-- </div> -->
+
+    </div>
+    </div>
+</section>
+
+<style>
+/* 添加字幕样式 */
+.carousel-item {
+    position: relative;
+    width: 100%;
+}
+
+.video-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    backdrop-filter: blur(2px); 
+}
+
+.carousel {
+    padding-bottom: 1px; 
+}
+</style>
+
+<script>
+    $(window).on('load', function () {
+        bulmaCarousel.attach('#results-carousel-horizontal', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            loop: true,
+            autoplay: false,
+        });
+
+        bulmaCarousel.attach('#results-carousel-vertical', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            loop: true,
+            autoplay: false,
+        });
+
+    });
+</script>
+
+
+<br><br><br>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2 class="title is-3">How it Works</h2>
+          <div class="content has-text-justified">
+            Given an input video, we first estimate the camera trajectory and the 3D geomtery of the scene with video geomtery estimators.
+            By projecting the estimated 3D geomtery onto the desired camera trajectory, we obtain the per-frame 2D flow between the input video and the novel video.
+            Instead of directly utilizing the rendered frames from the estimated 3D geometry, we ground the video diffusion model on this estimated geometry by
+            re-aligning the video feature tokens according to the 2D flow.
+          </div>
+
+          <!-- ✅ Image added below the explanation -->
+          <div class="content has-text-centered" style="margin-top: 20px;">
+            <img src="./img/test.png" alt="How it works illustration" style="width: 100%; max-height: 500px;" />
+        </div>
+        <div class="content has-text-justified" style="margin-top: 20px;">  
+            <p style="margin-top: 10px;"><em>In the video diffusion model, which consists of spatial and temporal blocks, we enhance the spatial block by integrating tokens provided by the video encoder based on the estimated 2D flow, thereby transforming it into a multi-view block. The tokens encoded by the video encoder are concatenated as key and value inputs within the self-attention layers of the multi-view block in the video diffusion model.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2 class="title is-3">Why incorporate geometry estimation?</h2>
+          <div class="content has-text-justified">
+            While generative models have shown promising results in synthesizing highly realistic novel views in static scenes by training on large-scale multi-view image datasets (3D data), applying this approach to dynamic scenes is challenging due to the limited availability of extensive real-world multi-view videos (4D data).
+            To sidestep this issue, Generative Camera Dolly (GCD) utilizes synthetic 4D data to train the generatrive model, which we find to be suboptimal for real-world applications due to domain gaps.
+            Instead of taking the data-driven solution, we decompose the task into two sub-tasks: (1) temporally-consistent geometry estimation and (2) generative video rendering based on the estimated geometry.
+            Incorporating this geometric prior reduces the burden on the generative model, enabling it to focus primarily on enhancing uncertain regions instead of learning full 4D dynamics from scratch, thereby greatly reducing the need for large-scale 4D training data.
+          </div>
+
+          <div class="content has-text-centered" style="margin-top: 20px;">
+            <img src="./img/geometry.png" alt="How it works illustration" style="width: 80%; max-height: 500px;" />
+        </div>
+        <div class="content has-text-justified" style="margin-top: 20px;">  
+            <p style="margin-top: 10px;"><em>To edit camera trajectories in monocular videos, we embed knowledge from video geometry prediction models, e.g., MonST3R, into video generative models, allowing the model to synthesize realistic novel views by filling occluded regions the geometry model cannot infer. By incorporating geometrical cues for generation, our approach demonstrates superior performance on novel view video synthesis, compared to fully generative approaches e.g, Generative Camera Dolly.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2 class="title is-3">Spatial-Temporal Factorized Fine-tuning</h2>
+          <div class="content has-text-justified">
+            To further reduce the need for 4D data, we incorporate a factorized fine-tuning strategy. By considering the spatio-temporal blocks of our video generative model independently, we train the spatial block with multi-view image (3D) data and train the temporal block with video data. As both 3D and video data are accessible up to scale, the training of generative models no longer requires 4D data.
+          </div>
+
+          <div class="content has-text-centered" style="margin-top: 20px;">
+            <img src="./img/factorized.png" alt="How it works illustration" style="width: 50%; max-height: 500px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser is-light is-small">
+    <div class="hero-body">
+
+        <div class="container" style="text-align: center; ">
+            <h2 class="title is-3">Qualtitative Comparisons</h2>
+            <div id="camera-control" class="carousel results-carousel">
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/potato_input.mp4" type="video/mp4">
+                    </video>
+                     <div class="video-caption" style="font-size: 0.7rem;">Input Video - Generate Novel Video Seen from Right 30°</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/potato_gcd.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Generative Camera Dolly (GCD)</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/potato_warp.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Reprojection + Video Inpainting</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/potato_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Ours</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/hamburger_input.mp4" type="video/mp4">
+                    </video>
+                     <div class="video-caption" style="font-size: 0.7rem;">Input Video - Generate Novel Video Seen from Top 10°</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/hamburger_gcd.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Generative Camera Dolly (GCD)</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/hamburger_warp.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Reprojection + Video Inpainting</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/hamburger_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Ours</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/dancingman_input.mp4" type="video/mp4">
+                    </video>
+                     <div class="video-caption" style="font-size: 0.7rem;">Input Video - Generate Novel Video Seen from Left 30°</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/dancingman_gcd.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Generative Camera Dolly (GCD)</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/dancingman_warp.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Reprojection + Video Inpainting</div>
+                </div>
+
+                <div class="carousel-item">
+                    <video muted autoplay loop width="100%" preload controls>
+                        <source src="./video/dancingman_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption" style="font-size: 0.7rem;">Ours</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $(window).on('load', function () {
+        bulmaCarousel.attach('#camera-control', {
+            slidesToScroll: 4,
+            slidesToShow: 4,
+            loop: true,
+            autoplay: false,
+        });
+    });
+</script>
+
+
+
+<section class="hero teaser is-light is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2 class="title is-3">Quantitative Results</h2>
+          <div class="content has-text-justified">
+            We show quantitative comparisons in multi-view dynamic datasets,
+            Neu3D and ST-NeRF. Ours is best in both LPIPS and Frame-Consistency (Frame-Con.), i.e., CLIP score between each frame of
+            the input video and the generated video. Note that datasets containing videos from a stationary camera are used, as our primary baseline,
+            Generative Camera Dolly, does not officially accept input videos from moving cameras, e.g., DyCheck.
+          </div>
+
+          <div class="content has-text-centered" style="margin-top: 20px;">
+            <img src="./img/quantitative_results.png" alt="How it works illustration" style="width: 100%; max-height: 500px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser is-light is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2 class="title is-3">Application: Generate Additional Data for 4D Reconstruction</h2>
+          <div class="content has-text-justified">
+            As our method can generate novel views from a single video, it can be used to generate additional data for 4D reconstruction.
+            Here, we show an example of leveraging additional data generated by our method during the training of a 4D reconstruction model Shape-of-Motion in the DyCheck dataset.
+            As shown below, incorporating additional data can improve the overall reconstructioon quality of the 4D reconstruction model.
+          </div>
+
+          <div class="content has-text-centered" style="margin-top: 20px;">
+            <img src="./img/ours_recon.png" alt="How it works illustration" style="width: 100%; max-height: 500px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="hero-body">
+        <div class="columns is-two-fifths is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        Website template credit to <a
+                            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, and is licensed under a <a
+                            rel="license"
+                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
