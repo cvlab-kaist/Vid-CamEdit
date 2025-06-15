@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Video Camera Trajectory Editing with <br> Generative Rendering from Estimated Geometry</h1>
+  <h1 align="center">Vid-CamEdit: Video Camera Trajectory Editing with <br> Generative Rendering from Estimated Geometry</h1>
   <p align="center">
     <a href="https://j0seo.github.io/">Junyoung&nbsp;Seo<sup>*</sup></a>
     ·
