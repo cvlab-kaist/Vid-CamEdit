@@ -26,7 +26,7 @@
     <a href="https://www.yukimitsufuji.com">Yuki Mitsufuji<sup>†</sup></a>
   </p>
   <h3 align="center"> arXiv 2025 </h3>
-  <h3 align="center"><a href="https://arxiv.org/pdf/xxx">Paper </a> | <a href="https://cvlab-kaist.github.io/Vid-CamEdit">Project Page </a> </h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2506.13697">Paper </a> | <a href="https://cvlab-kaist.github.io/Vid-CamEdit">Project Page </a> </h3>
   <div align="center"></div>
 </p>
 
